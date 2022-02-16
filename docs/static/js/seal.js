@@ -8,7 +8,7 @@ document.currentScript = document.currentScript || (function() {
 	const content = document.getElementById(content_id);
 	
 	let shield_image = document.createElement("img");
-	shield_image.src = "https://secure.convertize.com.br/static/img/pci-shield.png";
+	shield_image.src = "https://secure.convertize.com.br/static/media/pci-shield.png";
 
 	let valid_url = document.createElement("a");
 	valid_url.href = "https://secure.convertize.com.br/?s=" + schama_name;
