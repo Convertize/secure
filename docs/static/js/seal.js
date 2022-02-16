@@ -12,6 +12,7 @@ document.currentScript = document.currentScript || (function() {
 
 	let valid_url = document.createElement("a");
 	valid_url.href = "https://secure.convertize.com.br/?s=" + schama_name;
+	valid_url.target = "_blank";
 	
 	valid_url.appendChild(shield_image);
 	content.appendChild(valid_url);
