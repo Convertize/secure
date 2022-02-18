@@ -1,1 +1,34 @@
-function _0x373f(){const _0x55b931=['getAttribute','split','2160745FlXnZB','getElementsByTagName','currentScript','script','https://secure.convertize.com.br/?s=','1954971qcmxPE','width','https://secure.convertize.com.br/static/media/pci-shield.png','appendChild','1546428nHpnJg','9314qusyKk','createElement','8QzkrrW','schama_name','content','97ezTfDU','target','img','height','1964263IQVGJv','162x196','913028QwAttI','src','6wsoqQl','14064250Drshun'];_0x373f=function(){return _0x55b931;};return _0x373f();}function _0x5e1c(_0xb02382,_0x19323c){const _0x373fdb=_0x373f();return _0x5e1c=function(_0x5e1c6c,_0x1427e4){_0x5e1c6c=_0x5e1c6c-0x12c;let _0x47c216=_0x373fdb[_0x5e1c6c];return _0x47c216;},_0x5e1c(_0xb02382,_0x19323c);}const _0x2a3b37=_0x5e1c;(function(_0x2b2c4a,_0x5a53f9){const _0x204a81=_0x5e1c,_0x2f9203=_0x2b2c4a();while(!![]){try{const _0x3b6406=-parseInt(_0x204a81(0x13b))/0x1*(parseInt(_0x204a81(0x136))/0x2)+-parseInt(_0x204a81(0x143))/0x3*(parseInt(_0x204a81(0x141))/0x4)+-parseInt(_0x204a81(0x12c))/0x5+parseInt(_0x204a81(0x135))/0x6+-parseInt(_0x204a81(0x13f))/0x7*(parseInt(_0x204a81(0x138))/0x8)+parseInt(_0x204a81(0x131))/0x9+parseInt(_0x204a81(0x144))/0xa;if(_0x3b6406===_0x5a53f9)break;else _0x2f9203['push'](_0x2f9203['shift']());}catch(_0xe02df8){_0x2f9203['push'](_0x2f9203['shift']());}}}(_0x373f,0x3f91d),document[_0x2a3b37(0x12e)]=document[_0x2a3b37(0x12e)]||(function(){const _0x1eff80=_0x2a3b37,_0x167718=document[_0x1eff80(0x12d)](_0x1eff80(0x12f));return _0x167718[_0x167718['length']-0x1];}()),(function(){const _0x5988f7=_0x2a3b37,_0x16eb86=_0x5988f7(0x140),_0x482fcf=document[_0x5988f7(0x12e)][_0x5988f7(0x145)](_0x5988f7(0x139)),_0x32216d=document[_0x5988f7(0x12e)][_0x5988f7(0x145)](_0x5988f7(0x13a));try{let _0x422cb4=document['currentScript']['getAttribute']('size');}catch(_0x286c19){const _0x2c5964=_0x16eb86;}if(size==undefined||size==null)size=_0x16eb86;const _0x15624f=document['getElementById'](_0x32216d),[_0x475abc,_0x27c373]=size[_0x5988f7(0x146)]('x');let _0x510f02=document[_0x5988f7(0x137)](_0x5988f7(0x13d));_0x510f02[_0x5988f7(0x142)]=_0x5988f7(0x133);if(_0x475abc!=undefined)_0x510f02[_0x5988f7(0x132)]=_0x475abc;if(_0x27c373!=undefined)_0x510f02[_0x5988f7(0x13e)]=_0x27c373;let _0x599d3c=document[_0x5988f7(0x137)]('a');_0x599d3c['href']=_0x5988f7(0x130)+_0x482fcf,_0x599d3c[_0x5988f7(0x13c)]='_blank',_0x599d3c[_0x5988f7(0x134)](_0x510f02),_0x15624f[_0x5988f7(0x134)](_0x599d3c);}()));
+document.currentScript = document.currentScript || (function() {
+  const scripts = document.getElementsByTagName('script');
+  return scripts[scripts.length - 1];
+})();
+(function() {
+	const default_size = "162x196";
+	const schama_name = document.currentScript.getAttribute('schama_name');
+	const content_id = document.currentScript.getAttribute('content');
+	try {
+		let size = document.currentScript.getAttribute('size');
+	}catch (error) {
+		const size = default_size
+	}
+	
+	if (size == undefined || size == null) size = default_size;
+
+
+	const content = document.getElementById(content_id);
+
+	const [width, height] = size.split("x");
+	
+	let shield_image = document.createElement("img");
+	shield_image.src = "https://secure.convertize.com.br/static/media/pci-shield.png";
+
+	if (width != undefined) shield_image.width = width;
+	if (height != undefined) shield_image.height = height;
+
+	let valid_url = document.createElement("a");
+	valid_url.href = "https://secure.convertize.com.br/?s=" + schama_name;
+	valid_url.target = "_blank";
+	
+	valid_url.appendChild(shield_image);
+	content.appendChild(valid_url);
+})();
