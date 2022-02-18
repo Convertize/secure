@@ -1,0 +1,56 @@
+.certificate {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-top:50px;
+    margin-top: 20px;
+    color:#36b35a; */
+    background-color: #d5e2ed;
+}
+
+.certificate > img {
+    width: 185px;
+}
+
+.status p {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0;
+}
+
+.status h3 {
+    font-weight: 700;
+}
+
+.background {
+    /* height: 400px; */
+    width: 100%;
+    /* z-index: -1;
+    position: absolute; */
+}
+.store-name {
+    color: initial !important;
+    padding-top: 10px;
+}
+.shield {
+    
+    color:#36b35a; 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.background h4 {
+    text-transform: uppercase;
+    color: initial;
+}
+
+@media(max-width:768px) {
+    .shield {
+        flex-direction: column;
+        padding-top: 20px;
+    }
+}

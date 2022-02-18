@@ -1,0 +1,21 @@
+.top-bar {
+  height: 80px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.top-bar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+    width:150px
+}
+
+.lock-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
