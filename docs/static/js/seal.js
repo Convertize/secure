@@ -4,13 +4,10 @@ document.currentScript = document.currentScript || (function() {
 })();
 (function() {
 	const default_size = "162x196";
+	let size = default_size;
 	const schama_name = document.currentScript.getAttribute('schama_name');
 	const content_id = document.currentScript.getAttribute('content');
-	try {
-		let size = document.currentScript.getAttribute('size');
-	}catch (error) {
-		const size = default_size
-	}
+	try { size = document.currentScript.getAttribute('size'); }catch (e) {}
 	
 	if (size == undefined || size == null) size = default_size;
 
