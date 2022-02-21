@@ -17,7 +17,7 @@ document.currentScript = document.currentScript || (function() {
 	const [width, height] = size.split("x");
 	
 	let shield_image = document.createElement("img");
-	shield_image.src = "https://secure.convertize.com.br/static/media/pci-shield.png";
+	shield_image.src = "https://secure.convertize.com.br/static/media/pci-shield.svg";
 
 	if (width != undefined) shield_image.width = width;
 	if (height != undefined) shield_image.height = height;
