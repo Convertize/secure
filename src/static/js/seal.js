@@ -18,13 +18,16 @@ document.currentScript = document.currentScript || (function() {
 	
 	let shield_image = document.createElement("img");
 	shield_image.src = "https://secure.convertize.com.br/static/media/pci-shield.svg";
-
+	shield_image.alt = "Certificado PCI"
+	
 	if (width != undefined) shield_image.width = width;
 	if (height != undefined) shield_image.height = height;
 
 	let valid_url = document.createElement("a");
 	valid_url.href = "https://secure.convertize.com.br/?s=" + schama_name;
 	valid_url.target = "_blank";
+	valid_url.ariaLabel = "Certificado PCI"
+	valid_url.rel = "noreferrer"
 	
 	valid_url.appendChild(shield_image);
 	content.appendChild(valid_url);
