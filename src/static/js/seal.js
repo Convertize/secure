@@ -9,7 +9,9 @@ document.currentScript = document.currentScript || (function() {
 
 	try {
 		schema_name = document.currentScript.getAttribute('data-schema-name');
-	}catch (e) {
+	}catch (e) {}
+
+	if(schema_name===null || schema_name===""){
 		try {
 			schema_name = document.currentScript.getAttribute('schama_name');
 		}catch (e) {}
