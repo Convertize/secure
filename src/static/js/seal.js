@@ -3,11 +3,26 @@ document.currentScript = document.currentScript || (function() {
   return scripts[scripts.length - 1];
 })();
 (function() {
-	const default_size = "162x196";
+	const default_size = "60x70";
 	let size = default_size;
-	const schama_name = document.currentScript.getAttribute('schama_name');
+
+	try {
+		const schama_name = document.currentScript.getAttribute('data-schema-name');
+	}catch (e) {
+		try {
+			const schama_name = document.currentScript.getAttribute('schama_name');
+		}catch (e) {}
+	}
+	
 	const content_id = document.currentScript.getAttribute('content');
-	try { size = document.currentScript.getAttribute('size'); }catch (e) {}
+
+	try {
+		size = document.currentScript.getAttribute('date-size');
+	}catch (e) {
+		try {
+			size = document.currentScript.getAttribute('size');
+		}catch (e) {}
+	}
 	
 	if (size == undefined || size == null) size = default_size;
 
