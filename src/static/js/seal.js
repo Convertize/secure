@@ -5,12 +5,13 @@ document.currentScript = document.currentScript || (function() {
 (function() {
 	const default_size = "60x70";
 	let size = default_size;
+	let schema_name = "";
 
 	try {
-		const schama_name = document.currentScript.getAttribute('data-schema-name');
+		schema_name = document.currentScript.getAttribute('data-schema-name');
 	}catch (e) {
 		try {
-			const schama_name = document.currentScript.getAttribute('schama_name');
+			schema_name = document.currentScript.getAttribute('schama_name');
 		}catch (e) {}
 	}
 	
@@ -39,7 +40,7 @@ document.currentScript = document.currentScript || (function() {
 	if (height != undefined) shield_image.height = height;
 
 	let valid_url = document.createElement("a");
-	valid_url.href = "https://secure.convertize.com.br/?s=" + schama_name;
+	valid_url.href = "https://secure.convertize.com.br/?s=" + schema_name;
 	valid_url.target = "_blank";
 	valid_url.ariaLabel = "Certificado PCI";
 	valid_url.rel = "noreferrer";
