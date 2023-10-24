@@ -21,14 +21,15 @@ document.currentScript = document.currentScript || (function() {
 
 	try {
 		size = document.currentScript.getAttribute('date-size');
-	}catch (e) {
+	}catch (e) {}
+	
+	if (size == undefined || size == null){
 		try {
 			size = document.currentScript.getAttribute('size');
 		}catch (e) {}
 	}
 	
 	if (size == undefined || size == null) size = default_size;
-
 
 	const content = document.getElementById(content_id);
 
